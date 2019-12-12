@@ -1,0 +1,12 @@
+body{
+    background-color: rgb(88, 59, 83);
+    
+}
+input[type=text], input[type=password]{
+   
+   justify-content: center;
+}
+.login{
+    background: white;
+    
+}

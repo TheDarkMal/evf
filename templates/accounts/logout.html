@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block principal %}
+<title>Logout</title>
+<br>
+<center><h3>Session correctamente cerrada</h3></center>
+<br>
+<br>
+<div class="container">
+        <center> <img src="/static/images/hasta-pronto.jpg" class="img-fluid" alt="Responsive image"><center></center>
+</div>
+  <a href="{% url 'login' %}"><center>Iniciar session nuevamente</center></a>
+<br>
+<br>
+<br>
+<br>
+<br>
+{% endblock %}

@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+
+{% block principal %}
+    
+    <div class="container">
+            <center><h1>Lista de eventos</h1></center>
+    <table  class="table">
+        <tr>
+            <th>Nombre</th>
+            <th>Descripción</th>
+            <th>Empresa</th>
+            <th>Fecha</th>
+            <th>imagenes</th>
+            <th>Borrar</th>
+        </tr>
+        {% for Evento in object_list  %}
+            <tr >
+                
+                <td>{{ Evento.nombre }}</td>
+                <td>{{ Evento.descripcion }}</td>
+                <td>{{ Evento.empresa }}</td>
+                <td>{{ Evento.fecha }}</td>
+                <td><img src="{{ Evento.imagen }}" alt="imagen"></td>
+                <td><a href="{% url 'delete_evento' Evento.id %}">borrar</a></td>   
+            </a></td>
+                
+            </tr>
+        {% endfor %}
+
+    </table>
+    </div>
+</div>
+{% endblock %}
+

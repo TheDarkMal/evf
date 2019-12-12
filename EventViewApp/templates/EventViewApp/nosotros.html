@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block principal %}
+
+<div class="container">
+        <div class="card mb-3">
+          <img src="{% static 'images/slider.png' %}" class="card-img-top" alt="..." width="200px" height="200px">
+          <div class="card-body">
+            <center><h5 class="card-title">Nosotros</h5></center>
+          <center><p class="card-text">Event-View es un emprendimiento digital para ayudar a las empresas que ofrecen servicios y espacios para crear eventos, y para las personas comunes les ayudamos crear su eventos de una forma facil y eficaz</p></center>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+    
+        <div class="card-group">
+          <div class="card">
+            <img src="{% static 'images/slider.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+            <center><h5 class="card-title">Andres Olivero</h5></center>
+              <p class="card-text">Desarrollador de producto I</p>
+              <p class="card-text"><small class="text-muted">11/12/2019</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="{% static 'images/slider.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+            <center><h5 class="card-title">Aylyn Meza</h5></center>
+              <p class="card-text">Gestor de negocios</p>
+              <p class="card-text"><small class="text-muted">11/12/2019</small></p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="{% static 'images/slider.png' %}" class="card-img-top" alt="...">
+            <div class="card-body">
+            <center><h5 class="card-title">Mauricio Vergara</h5></center>
+              <p class="card-text">Desarrollador de producto II</p>
+              <p class="card-text"><small class="text-muted">11/12/2019</small></p>
+            </div>
+          </div>
+        </div>
+       </div>
+
+{% endblock  %}

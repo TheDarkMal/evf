@@ -1,0 +1,20 @@
+{% load static %}
+
+<link rel="stylesheet" href="{% static 'css/login.css' %}">
+
+<title>Login</title>
+<div class="container">
+ <div class="login">    
+   <form method="POST" action="{% url 'login' %}">
+    {% csrf_token %}
+
+     {{ form.as_p }}
+
+   <div class="Text Center">
+           <p><a href="{% url 'inicio' %}">volver a inicio</a></p>
+        <button class="btn btn-info" type="submit">Iniciar Session</button>
+
+
+    </form>
+ </div>
+</div>

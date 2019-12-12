@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block principal %}
+<br>
+    <br>
+        <div class="container">
+        <div class="row row-cols-1 row-cols-md-2">
+                <div class="col mb-4">
+                  <div class="card">
+                    <img src="{% static 'images/slider.png' %}" class="card-img-top" alt="..." width="150px" height="150px">
+                    <div class="card-body">
+                      <center><h5 class="card-title">Espacio</h5></center>
+                      <p class="card-text"></p>
+                      <p class="card-text"><a href="{% url 'Nuevo_Espacios' %}" class="btn btn-primary btn-lg btn-block" type="sumit">Agregar</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col mb-4">
+                  <div class="card">
+                    <img src="{% static 'images/slider.png' %}" class="card-img-top" alt="..." width="150px" height="150px">
+                    <div class="card-body">
+                      <center><h5 class="card-title">Servicio</h5></center>
+                      <p class="card-text"></p>
+                      <p class="card-text"><a href="{% url 'Nuevo_Servicio' %}" class="btn btn-primary btn-lg btn-block" type="sumit">Agregar</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col mb-4">
+                  <div class="card">
+                    <img src="{% static 'images/slider.png' %}" class="card-img-top" alt="..." width="150px" height="150px">
+                    <div class="card-body">
+                    <center><h5 class="card-title">Usuario</h5></center>
+                      <p class="card-text"></p>
+                      <p class="card-text"><a href="#" class="btn btn-primary btn-lg btn-block" type="sumit">Agregar</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="col mb-4">
+                  <div class="card">
+                    <img src="{% static 'images/slider.png' %}" class="card-img-top" alt="..." width="150px" height="150px">
+                    <div class="card-body">
+                    <center><h5 class="card-title">Eventos</h5></center>
+                      <p class="card-text"></p>
+                      <p class="card-text"><a href="#" class="btn btn-primary btn-lg btn-block" type="sumit">Agregar</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              </div>
+    {% endblock %}

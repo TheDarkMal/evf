@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block principal %}
+<div class="container">
+  <center><h1>Agregar evento</h1></center>
+    <form action="#" method="post">
+        {% csrf_token %}
+
+        {{ form.as_p }}
+
+        <button type="submit">crear </button>
+
+    </form>
+  </div>
+{% endblock %}

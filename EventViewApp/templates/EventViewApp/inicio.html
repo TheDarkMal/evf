@@ -1,0 +1,69 @@
+{% extends 'base.html' %} 
+{% load staticfiles %}
+{% block principal %}
+<div class="container">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+              <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="{% static 'images/slider.png' %}" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="{% static 'images/slider.png' %}" class="d-block w-100" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="{% static 'images/slider.png' %}" class="d-block w-100" alt="...">
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+</div>
+
+<br>
+
+<div class="container">
+<div class="card-group">
+<div class="card">
+<img src="{% static 'images/cards.png' %}" class="card-img-top" alt="...">
+<div class="card-body">
+<h5 class="card-title">Andres Olivero</h5>
+<p class="card-text">Desarrollador de producto I</p>
+</div>
+<div class="card-footer">
+<small class="text-muted">Last updated 10/12/2019</small>
+</div>
+</div>
+<div class="card">
+<img src="{% static 'images/cards.png' %}" class="card-img-top" alt="...">
+<div class="card-body">
+<h5 class="card-title">Aylyn Meza</h5>
+<p class="card-text">Gestor de Negocios</p>
+</div>
+<div class="card-footer">
+<small class="text-muted">Last updated 10/12/2019</small>
+</div>
+</div>
+<div class="card">
+<img src="{% static 'images/cards.png' %}" class="card-img-top" alt="...">
+<div class="card-body">
+<h5 class="card-title">Mauricio Vergara</h5>
+<p class="card-text">Desarrollador de producto II</p>
+</div>
+<div class="card-footer">
+<small class="text-muted">Last updated 10/12/2019</small>
+</div>
+</div>
+</div>
+</div>
+{% endblock %}
